@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:drawableLeft="@drawable/ic_search_24dp"
+        android:hint="@string/enter_request"
+        android:textColorHint="@color/colorWhite"
+        android:padding ="16dp"
+        android:singleLine="true"
+        android:imeOptions="actionSearch"
+        android:elevation="2dp"
+        android:textSize="16sp"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorDark"
+        tools:ignore="RtlHardcoded" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/requestsRecView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/favoritesButton"
+        android:layout_below="@+id/searchEditText"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:background="@color/colorDarkLight"
+        android:paddingRight="16dp" />
+
+    <Button
+        android:id="@+id/favoritesButton"
+        style="@style/StackOverflow.CommonButton.PrimaryButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:drawableStart="@drawable/ic_star_36dp"
+        android:gravity="center"
+        android:text="@string/favorites"
+        tools:ignore="RtlHardcoded" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/favoritesButton"
+        android:layout_centerHorizontal="true"
+        android:elevation="2dp"
+        android:visibility="gone" />
+</RelativeLayout>

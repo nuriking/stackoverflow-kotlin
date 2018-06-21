@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">steckoverflow kotlin</string>
+    <string name="enter_request">Введите запрос</string>
+    <string name="favorites">Избранные</string>
+    <string name="site_title_const">Для более подробного просмотра ответа перейдите по ссылке:</string>
+    <string name="add_to_db">Добавить в избранные</string>
+    <string name="delete_from_db">Удалить из избранных</string>
+</resources>
